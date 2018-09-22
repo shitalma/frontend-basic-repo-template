@@ -6,15 +6,14 @@ import { Routes } from './Routes';
 import LandingPage from '../components/landingPage/LandingPage';
 import NotFoundPage from '../components/notFoundPage/NotFoundPage';
 
-
 describe('Routes - ', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = mount(
-      <MemoryRouter initialEntries={[ '/random' ]}>
-        <Routes/>
-      </MemoryRouter>
+      <MemoryRouter initialEntries={['/random']}>
+        <Routes />
+      </MemoryRouter>,
     );
   });
 
@@ -25,9 +24,9 @@ describe('Routes - ', () => {
 
   it('valid path should redirect to lending page', () => {
     wrapper = mount(
-      <MemoryRouter initialEntries={[ '/' ]}>
-        <Routes/>
-      </MemoryRouter>
+      <MemoryRouter initialEntries={['/']}>
+        <Routes />
+      </MemoryRouter>,
     );
     expect(wrapper.find(LandingPage)).toHaveLength(1);
     expect(wrapper.find(NotFoundPage)).toHaveLength(0);

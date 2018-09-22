@@ -10,7 +10,8 @@
         "react",
         "jsx-a11y",
         "import",
-        "prettier"
+        "prettier",
+        "jasmine"
     ],
     "overrides": [
         {
@@ -53,6 +54,7 @@
         "document": true
     },
     "env": {
-        "es6": true
+        "es6": true,
+        "jasmine": true
     }
 }
