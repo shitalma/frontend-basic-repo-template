@@ -10,12 +10,23 @@
     "lint": "eslint src",
     "format": "yarn run lint -- --fix",
     "precommit": "lint-staged",
+    "prepush": "yarn jest --no-cache",
     "test": "jest",
     "test:watch": "jest --watch",
     "update-snapshot": "jest --u"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./setupEnzyme.js"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.jsx": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
