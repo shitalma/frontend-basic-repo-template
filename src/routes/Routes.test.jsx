@@ -4,7 +4,7 @@ import { mount } from 'enzyme';
 
 import { Routes } from './Routes';
 import LandingPage from '../components/landingPage/LandingPage';
-import NotFoundPage from '../components/notFoundPage/notFoundPage';
+import NotFoundPage from '../components/notFoundPage/NotFoundPage';
 
 
 describe('Routes - ', () => {
