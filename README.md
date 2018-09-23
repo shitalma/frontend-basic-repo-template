@@ -1,4 +1,4 @@
-# Frontend Basic Repository Template
+# Frontend Basic Repository Setup
 
 **Technologies used**:
 * React
