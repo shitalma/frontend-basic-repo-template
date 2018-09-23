@@ -3,6 +3,7 @@
 **Technologies used**:
 * React
 * Redux
+* Redux thunk
 * React Router
 * Babel
 * HTML5
@@ -11,7 +12,6 @@
 * Jest
 * Enzyme
 * react styleguide
-* Styled components
 
 **Features**:
 ### Install
@@ -19,13 +19,15 @@
     https://nodejs.org/en/download/
 * Install yarn (if not present)
     https://yarnpkg.com/lang/en/docs/install/
-* git clone
+* git clone 
+    https://github.com/shitalma/frontend-basic-repo-template.git
 * yarn install
-
 
 ### Steps to run project
 ```
-yarn start
+$ yarn start
+
+and go to http://localhost:3000/
 ```
 
 ### Run Tests (...always run tests)
