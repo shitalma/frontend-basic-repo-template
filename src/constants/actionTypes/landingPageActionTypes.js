@@ -1,3 +1,2 @@
-const UPDATE_USER_DATA = 'UPDATE_USER_DATA';
-
-export default UPDATE_USER_DATA;
+export const FETCH_USERS = 'FETCH_USERS';
+export const UPDATE_USER_DATA = 'UPDATE_USER_DATA';

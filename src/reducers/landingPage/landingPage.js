@@ -1,4 +1,4 @@
-import UPDATE_USER_DATA from '../../constants/actionTypes/landingPageActionTypes';
+import { UPDATE_USER_DATA } from '../../constants/actionTypes/landingPageActionTypes';
 import createReducer from '../helpers/helpers';
 
 const initialState = {};
