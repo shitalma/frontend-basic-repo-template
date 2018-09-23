@@ -10,6 +10,6 @@ describe('Root reducer - ', () => {
   });
 
   it('should contain the app reducers', () => {
-    expect(combinedReducers).toContain('landingPage');
+    expect(combinedReducers).toContain('users');
   });
 });

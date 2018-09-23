@@ -4,7 +4,7 @@ import { mount } from 'enzyme';
 
 import Routes from './Routes';
 import NotFoundPage from '../components/notFoundPage/NotFoundPage';
-import LandingPageContainer from '../containers/LandingPageContainer';
+import UsersContainer from '../containers/users/UsersContainer';
 
 xdescribe('Routes - ', () => {
   let wrapper;
@@ -18,7 +18,7 @@ xdescribe('Routes - ', () => {
   });
 
   it('invalid path should redirect to 404', () => {
-    expect(wrapper.find(LandingPageContainer)).toHaveLength(0);
+    expect(wrapper.find(UsersContainer)).toHaveLength(0);
     expect(wrapper.find(NotFoundPage)).toHaveLength(1);
   });
 
@@ -28,7 +28,7 @@ xdescribe('Routes - ', () => {
         <Routes />
       </MemoryRouter>,
     );
-    expect(wrapper.find(LandingPageContainer)).toHaveLength(1);
+    expect(wrapper.find(UsersContainer)).toHaveLength(1);
     expect(wrapper.find(NotFoundPage)).toHaveLength(0);
   });
 });

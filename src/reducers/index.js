@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 
-import landingPage from './landingPage/landingPage';
+import users from './users/users';
 
 const appReducer = combineReducers({
-  landingPage,
+  users,
 });
 
 export default appReducer;

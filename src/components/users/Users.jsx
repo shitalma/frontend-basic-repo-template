@@ -1,27 +1,27 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-export default class LandingPage extends PureComponent {
+export default class Users extends PureComponent {
   static propTypes = {
-    getUsersData: PropTypes.func,
-    userData: PropTypes.arrayOf(PropTypes.object),
+    getUsers: PropTypes.func,
+    users: PropTypes.arrayOf(PropTypes.object),
   };
 
   static defaultProps = {
-    getUsersData: () => {},
-    userData: [],
+    getUsers: () => {},
+    users: [],
   };
 
   componentDidMount() {
-    const { getUsersData } = this.props;
-    getUsersData();
+    const { getUsers } = this.props;
+    getUsers();
   }
 
   render() {
-    const { userData } = this.props;
+    const { users } = this.props;
     return (
       <ul className="js-userName">
-        {userData.map(user => (
+        {users.map(user => (
           <li key={user.userId}>{user.userName}</li>
         ))}
       </ul>

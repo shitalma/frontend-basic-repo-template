@@ -1,9 +1,9 @@
-import landingPageUserDataSelector from './LandingPageUserDataSelector';
+import usersSelector from './UsersSelector';
 
-describe('landing page user data selector', () => {
+describe('User selector', () => {
   const userDataFromApi = {
-    landingPage: {
-      userData: [
+    users: {
+      data: [
         {
           address: {
             street: 'Kattie Turnpike',
@@ -28,12 +28,12 @@ describe('landing page user data selector', () => {
   };
 
   it('should get the background overview and fund ethos from the store overview', () => {
-    expect(landingPageUserDataSelector(userDataFromApi)).toEqual([
+    expect(usersSelector(userDataFromApi)).toEqual([
       { userId: 10, userName: 'Moriah.Stanton' },
     ]);
   });
 
   it('should get empty userData when data is not present in the store', () => {
-    expect(landingPageUserDataSelector({})).toEqual([]);
+    expect(usersSelector({})).toEqual([]);
   });
 });
