@@ -5,8 +5,8 @@ import { Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 import history from './utils/history';
-import store from './app/store';
-import { Routes } from './routes/Routes';
+import store from './reducers/store';
+import Routes from './routes/Routes';
 
 ReactDOM.render(
   <Provider store={store}>
@@ -14,5 +14,5 @@ ReactDOM.render(
       <Routes />
     </Router>
   </Provider>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );

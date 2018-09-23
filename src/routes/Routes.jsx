@@ -1,19 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import LandingPage from '../components/landingPage/LandingPage';
 import NotFoundPage from '../components/notFoundPage/NotFoundPage';
+import LandingPageContainer from '../containers/LandingPageContainer';
 
-export class Routes extends Component {
-  static propTypes = {
-  };
+const Routes = () => (
+  <Switch>
+    <Route exact path="/" component={LandingPageContainer} />
+    <Route component={NotFoundPage} />
+  </Switch>
+);
 
-  render() {
-    return (
-        <Switch>
-          <Route exact path='/' component={LandingPage}/>
-          <Route component={NotFoundPage} />
-        </Switch>
-    );
-  }
-}
+export default Routes;
