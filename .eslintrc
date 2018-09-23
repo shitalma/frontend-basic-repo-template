@@ -37,6 +37,7 @@
         "strict": 1,
         "import/no-extraneous-dependencies": 0,
         "react/prefer-stateless-function": 2,
+        "react/jsx-filename-extension": [1, { "extensions": [".jsx"] }],
         "no-alert": 0,
         "import/extensions": [
             "error",
