@@ -4,9 +4,11 @@ import LandingPage from '../components/landingPage/LandingPage';
 import * as http from '../utils/common/fetch';
 import updateUserData from '../actions/landingPage/landingPage';
 import urls from '../constants/urls';
+import landingPageUserDataSelector from '../selectors/landingPage/LandingPageUserDataSelector';
+import areStatesEqualGenerator from '../selectors/utils/selectorUtils';
 
 const mapStateToProps = state => ({
-  userData: state.landingPage.userData,
+  userData: landingPageUserDataSelector(state),
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -20,4 +22,8 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
+  null,
+  {
+    areStatesEqual: areStatesEqualGenerator(landingPageUserDataSelector),
+  },
 )(LandingPage);
