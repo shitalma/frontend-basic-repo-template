@@ -27,6 +27,8 @@ describe('Users page', () => {
 
   it('should display user name', () => {
     const usersWrapper = wrapper.find('.js-userName');
-    expect(usersWrapper.at(0).text()).toEqual('Clementina DuBuque');
+    expect(usersWrapper.at(0).props().children[0]).toEqual(
+      'Clementina DuBuque',
+    );
   });
 });

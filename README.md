@@ -5,6 +5,7 @@
 * Redux
 * Redux thunk
 * React Router
+* Material UI
 * Babel
 * HTML5
 * WebPack
