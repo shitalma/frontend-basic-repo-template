@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import Button from '@material-ui/core/Button';
+import Button from '../../uiComponents/Button';
 
 export default class Users extends PureComponent {
   static propTypes = {
@@ -24,9 +24,7 @@ export default class Users extends PureComponent {
     return (
       <div className="js-userName">
         {users.map(user => (
-          <Button key={user.userId} variant="contained" color="primary">
-            {user.userName}
-          </Button>
+          <Button>{user.userName}</Button>
         ))}
       </div>
     );

@@ -9,7 +9,11 @@ describe('Users page', () => {
   const users = [
     {
       userId: 10,
-      userName: 'Clementina DuBuque',
+      userName: 'DuBuque',
+    },
+    {
+      userId: 11,
+      userName: 'Clementina',
     },
   ];
 
@@ -26,9 +30,6 @@ describe('Users page', () => {
   });
 
   it('should display user name', () => {
-    const usersWrapper = wrapper.find('.js-userName');
-    expect(usersWrapper.at(0).props().children[0]).toEqual(
-      'Clementina DuBuque',
-    );
+    expect(wrapper.find('WithStyles(Button)')).toHaveLength(2);
   });
 });
