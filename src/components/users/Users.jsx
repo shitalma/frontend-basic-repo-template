@@ -24,7 +24,7 @@ export default class Users extends PureComponent {
     return (
       <div className="js-userName">
         {users.map(user => (
-          <Button>{user.userName}</Button>
+          <Button key={user.userId}>{user.userName}</Button>
         ))}
       </div>
     );
