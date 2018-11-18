@@ -1,5 +1,5 @@
-import { UPDATE_USERS_DATA } from '../../constants/actionTypes/usersActionTypes';
-import createReducer from '../helpers/helpers';
+import { UPDATE_USERS_DATA } from '../constants/actionTypes/usersActionTypes';
+import createReducer from './helpers';
 
 const initialState = {};
 

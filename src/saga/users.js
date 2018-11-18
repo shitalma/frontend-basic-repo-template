@@ -1,6 +1,6 @@
-import * as http from '../utils/common/fetch';
+import * as http from '../utils/fetch';
 import urls from '../constants/urls';
-import { fetchUsers, updateUserData } from '../actions/users/users';
+import { fetchUsers, updateUserData } from '../actions/users';
 
 const getUsers = () => dispatch => {
   dispatch(fetchUsers());

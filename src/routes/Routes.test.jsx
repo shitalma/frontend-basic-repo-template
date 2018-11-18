@@ -3,7 +3,7 @@ import { MemoryRouter } from 'react-router-dom';
 import { mount } from 'enzyme';
 
 import Routes from './Routes';
-import NotFoundPage from '../components/notFoundPage/NotFoundPage';
+import Error from '../components/Error';
 import UsersContainer from '../containers/users/UsersContainer';
 
 xdescribe('Routes - ', () => {
@@ -19,7 +19,7 @@ xdescribe('Routes - ', () => {
 
   it('invalid path should redirect to 404', () => {
     expect(wrapper.find(UsersContainer)).toHaveLength(0);
-    expect(wrapper.find(NotFoundPage)).toHaveLength(1);
+    expect(wrapper.find(Error)).toHaveLength(1);
   });
 
   it('valid path should redirect to lending page', () => {
@@ -29,6 +29,6 @@ xdescribe('Routes - ', () => {
       </MemoryRouter>,
     );
     expect(wrapper.find(UsersContainer)).toHaveLength(1);
-    expect(wrapper.find(NotFoundPage)).toHaveLength(0);
+    expect(wrapper.find(Error)).toHaveLength(0);
   });
 });

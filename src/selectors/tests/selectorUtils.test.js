@@ -1,4 +1,4 @@
-import areStatesEqualGenerator from './selectorUtils';
+import areStatesEqualGenerator from '../selectorUtils';
 
 describe('selector utils', () => {
   it('should return true if all selectors return same value for both prev and next state selections', () => {

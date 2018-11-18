@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
 
-import appReducer from './index';
+import appReducer from '../index';
 
 describe('Root reducer - ', () => {
   let combinedReducers;

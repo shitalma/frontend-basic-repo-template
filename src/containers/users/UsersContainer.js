@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
 
-import areStatesEqualGenerator from '../../selectors/utils/selectorUtils';
-import usersSelector from '../../selectors/users/UsersSelector';
-import getUsers from '../../apiCalls/usersApiCall';
-import Users from '../../components/users/Users';
+import areStatesEqualGenerator from '../../selectors/selectorUtils';
+import usersSelector from '../../selectors/UsersSelector';
+import getUsers from '../../saga/users';
+import Users from '../../components/Users';
 
 const mapStateToProps = state => ({
   users: usersSelector(state),

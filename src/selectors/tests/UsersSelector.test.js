@@ -1,4 +1,4 @@
-import usersSelector from './UsersSelector';
+import usersSelector from '../UsersSelector';
 
 describe('User selector', () => {
   const userDataFromApi = {

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import sinon from 'sinon';
 
-import * as http from './fetch';
+import * as http from '../fetch';
 
 describe('Fetch', () => {
   let requestStub;

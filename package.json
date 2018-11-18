@@ -13,9 +13,7 @@
     "prepush": "yarn jest --no-cache",
     "test": "jest",
     "test:watch": "jest --watch",
-    "update-snapshot": "jest --u",
-    "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "update-snapshot": "jest --u"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./setupEnzyme.js",
@@ -86,8 +84,7 @@
     "sinon": "^4.5.0",
     "webpack": "^4.18.0",
     "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.8",
-    "react-styleguidist": "^7.3.10"
+    "webpack-dev-server": "^3.1.8"
   },
   "dependencies": {
     "@material-ui/core": "^3.5.1",

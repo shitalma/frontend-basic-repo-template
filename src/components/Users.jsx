@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import Button from '../../uiComponents/Button';
+import Button from '@material-ui/core/Button';
 
 export default class Users extends PureComponent {
   static propTypes = {
