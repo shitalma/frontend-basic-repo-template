@@ -129,10 +129,13 @@ const styles = theme => ({
 });
 
 class Dashboard extends React.Component {
-  state = {
-    name: 'Cat in the Hat',
-    multiline: 'Controlled',
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: 'Cat in the Hat',
+      multiline: 'Controlled',
+    };
+  }
 
   handleChange = name => event => {
     this.setState({
