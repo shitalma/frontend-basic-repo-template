@@ -4,9 +4,9 @@ import configureStore from 'redux-mock-store';
 
 import { shallow } from 'enzyme';
 
-import UsersContainer from './UsersContainer';
+import UsersContainer from '../LandingContainer';
 
-describe('Users Container', () => {
+describe('Landing Container', () => {
   let mockStore;
   let usersContainerWrapper;
   const data = [{ username: 'random', id: 'random' }];

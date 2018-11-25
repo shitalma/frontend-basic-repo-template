@@ -4,7 +4,7 @@ import { mount } from 'enzyme';
 
 import Routes from './Routes';
 import Error from '../components/Error';
-import UsersContainer from '../containers/users/UsersContainer';
+import UsersContainer from '../containers/LandingContainer';
 
 xdescribe('Routes - ', () => {
   let wrapper;

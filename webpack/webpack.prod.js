@@ -3,7 +3,7 @@ const path = require('path');
 
 const plugins = [
   new webpack.DefinePlugin({
-    IS_PRODUCTION_ENVIRONMENT: true
+    IS_PRODUCTION_ENVIRONMENT: true,
   }),
 ];
 
@@ -15,5 +15,5 @@ module.exports = require('./webpack.base')({
     historyApiFallback: true,
   },
   devtool: 'none',
-  plugins
+  plugins,
 });

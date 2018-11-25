@@ -2,11 +2,11 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import Error from '../components/Error';
-import UsersContainer from '../containers/users/UsersContainer';
+import LandingContainer from '../containers/LandingContainer';
 
 const Routes = () => (
   <Switch>
-    <Route exact path="/" component={UsersContainer} />
+    <Route exact path="/" component={LandingContainer} />
     <Route component={Error} />
   </Switch>
 );

@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const plugins = [
   new webpack.HotModuleReplacementPlugin(),
   new webpack.DefinePlugin({
-    IS_PRODUCTION_ENVIRONMENT: false
+    IS_PRODUCTION_ENVIRONMENT: false,
   }),
 ];
 

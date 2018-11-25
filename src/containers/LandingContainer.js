@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
 
-import areStatesEqualGenerator from '../../selectors/selectorUtils';
-import usersSelector from '../../selectors/UsersSelector';
-import getUsers from '../../saga/users';
-import Users from '../../components/Users';
+import areStatesEqualGenerator from '../selectors/selectorUtils';
+import usersSelector from '../selectors/UsersSelector';
+import getUsers from '../saga/users';
+import Landing from '../components/Landing';
 
 const mapStateToProps = state => ({
   users: usersSelector(state),
@@ -20,4 +20,4 @@ export default connect(
   {
     areStatesEqual: areStatesEqualGenerator(usersSelector),
   },
-)(Users);
+)(Landing);
