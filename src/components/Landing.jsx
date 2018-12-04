@@ -137,6 +137,11 @@ class Dashboard extends React.Component {
     };
   }
 
+  componentDidMount() {
+    const { fetchUsers } = this.props;
+    fetchUsers();
+  }
+
   handleChange = name => event => {
     this.setState({
       [name]: event.target.value,

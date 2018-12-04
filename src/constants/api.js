@@ -21,5 +21,15 @@ const fetch = (method, url) => {
     .then(response => response);
 };
 
-export const get = url => fetch(requestMethods.GET, url);
-export const post = () => fetch();
+export default function() {
+  return {
+    Users: {
+      get() {
+        return fetch(
+          requestMethods.get,
+          'https://jsonplaceholder.typicode.com/users',
+        );
+      },
+    },
+  };
+}

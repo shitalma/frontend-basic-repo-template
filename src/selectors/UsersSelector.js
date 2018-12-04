@@ -7,10 +7,11 @@ const usersSelector = createSelector(
   usersDataFromStore => {
     if (!usersDataFromStore) return [];
 
-    return usersDataFromStore.map(user => ({
+    const data = usersDataFromStore.map(user => ({
       userId: user.id,
       userName: user.username,
     }));
+    return data;
   },
 );
 

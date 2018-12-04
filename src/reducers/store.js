@@ -1,4 +1,6 @@
 import { compose, createStore } from 'redux';
+import createSagaMiddleware from 'redux-saga';
+
 import appReducer from './index';
 
 const rootReducer = (state, action) => appReducer(state, action);
